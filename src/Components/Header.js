@@ -6,8 +6,9 @@ import Accesories from './Accesories';
 import About from './About';
 import Contact from './Contact';
 import Shop from './Shop';
+import Home from './Home';
 
-import Sliderhome from './Sliderhome';
+
 
 
 
@@ -49,7 +50,7 @@ return(
     </div>
    </header>
   <Routes>
-    <Route path='/'>Home</Route>
+    <Route path='/' element={<Home/>}>Home</Route>
     <Route path='/blog' element={<Blog/>}>Blog</Route>
     <Route path='/about' element={<About/>}>About Us</Route>
     <Route path='/contact' element={<Contact/>}>Contact Us</Route>
@@ -57,7 +58,7 @@ return(
     <Route path='/shop' element={<Shop/>}>Shop</Route>
   </Routes>
 
-<Sliderhome/>
+
    </>
 )
 
