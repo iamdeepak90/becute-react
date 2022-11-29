@@ -9,6 +9,7 @@ import Shop from './Shop';
 import Home from './Home';
 
 
+import Sliderhome from './Sliderhome';
 
 
 
@@ -50,7 +51,7 @@ return(
     </div>
    </header>
   <Routes>
-    <Route path='/' element={<Home/>}>Home</Route>
+    <Route path='/'>Home</Route>
     <Route path='/blog' element={<Blog/>}>Blog</Route>
     <Route path='/about' element={<About/>}>About Us</Route>
     <Route path='/contact' element={<Contact/>}>Contact Us</Route>
@@ -58,7 +59,7 @@ return(
     <Route path='/shop' element={<Shop/>}>Shop</Route>
   </Routes>
 
-
+<Sliderhome/>
    </>
 )
 
