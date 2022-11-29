@@ -61,7 +61,7 @@ return(
     <Route path='/shop' element={<Shop/>}>Shop</Route>
     <Route path='/wishlist' element={<Wishlist/>}>Wishlist</Route>
     <Route path='/privacy' element={<Privacy/>}>Privacy</Route>
-    <Route path='/Faq' element={<Faq/>}>Faq</Route>
+    <Route path='/Faq' element={<Faq/>}>faq</Route>
   </Routes>
 
 <Sliderhome/>
