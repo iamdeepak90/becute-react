@@ -6,11 +6,7 @@ import Accesories from './Accesories';
 import About from './About';
 import Contact from './Contact';
 import Shop from './Shop';
-<<<<<<< HEAD
 import Home from './Home';
-=======
-import Wishlist from './Wishlist';
->>>>>>> cfda97ef9b5b01ed89679584a4cf07e7aa2cd7bf
 
 
 
@@ -60,7 +56,6 @@ return(
     <Route path='/contact' element={<Contact/>}>Contact Us</Route>
     <Route path='/accesories' element={<Accesories/>}>Accesories</Route>
     <Route path='/shop' element={<Shop/>}>Shop</Route>
-    <Route path='/wishlist' element={<Wishlist/>}>Shop</Route>
   </Routes>
 
 

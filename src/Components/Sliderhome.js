@@ -2,7 +2,6 @@ import React from 'react';
 
 const Sliderhome = () => {
     return(
-<<<<<<< HEAD
         <>
    
 
@@ -29,9 +28,6 @@ const Sliderhome = () => {
 </div>
       
         </>
-=======
-        <h1>Home page slider 111!!</h1>
->>>>>>> cfda97ef9b5b01ed89679584a4cf07e7aa2cd7bf
     )
 }
 
