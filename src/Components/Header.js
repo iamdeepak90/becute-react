@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import Blog from './Blog';
 import Accesories from './Accesories';
@@ -46,7 +46,6 @@ return(
         </div>
     </div>
    </header>
-  
   <Routes>
     <Route path='/'>Home</Route>
     <Route path='/blog' element={<Blog/>}>Blog</Route>
