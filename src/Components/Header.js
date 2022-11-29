@@ -7,6 +7,8 @@ import About from './About';
 import Contact from './Contact';
 import Shop from './Shop';
 import Home from './Home';
+import Privacy from './Privacy';
+import Faq from './Faq';
 
 
 import Sliderhome from './Sliderhome';
@@ -57,6 +59,8 @@ return(
     <Route path='/contact' element={<Contact/>}>Contact Us</Route>
     <Route path='/accesories' element={<Accesories/>}>Accesories</Route>
     <Route path='/shop' element={<Shop/>}>Shop</Route>
+    <Route path='/privacy' element={<Privacy/>}>Privacy</Route>
+    <Route path='/faq' element={<Faq/>}>Privacy</Route>
   </Routes>
 
 <Sliderhome/>

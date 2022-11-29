@@ -61,7 +61,7 @@ const Header = () => {
                                 <li class="footer__widget--menu__list"><NavLink to='about'>About Us</NavLink></li>
                                 <li class="footer__widget--menu__list"><NavLink to='wishlist'>Wishlist</NavLink></li>
                                 <li class="footer__widget--menu__list"><NavLink to='privacy'>Privacy Policy</NavLink></li>
-                                <li class="footer__widget--menu__list"><NavLink to='Faq'>Frequently</NavLink></li>
+                                <li class="footer__widget--menu__list"><NavLink to='faq'>Frequently</NavLink></li>
                             </ul>
                         </div>
                     </div>
