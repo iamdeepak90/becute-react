@@ -11,6 +11,10 @@ header{background-color: #f9f9f9;}
 .footer__bg { background-color:#fdfcf8;}
 .footer__widget--desc { font-size: 14px;}
 .footer__widget--info{ margin: 10px 0px 0px 0px; padding-left:0px;}
+<<<<<<< HEAD
 
 #carouselExampleControls button{ opacity: 1;}
 #carouselExampleControls button span{width:40px; height:40px; background-size: 30px; background-color: #f39b40de;border-radius: 100%;}
+=======
+.footer__widget--menu__list a{ font-size: 12px; color:#222; text-decoration: none; padding: 0px 0px 10px 0px;}
+>>>>>>> cfda97ef9b5b01ed89679584a4cf07e7aa2cd7bf
