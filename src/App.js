@@ -8,12 +8,11 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <>
-    <Router>
     <Header/>
-    </Router>
+  
     <Footer/>
     
-    <h1>We will start our First React project!! testing</h1>
+    <h1>We will start our First React project!! </h1>
     </>
   );
 }
