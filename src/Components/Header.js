@@ -7,6 +7,8 @@ import About from './About';
 import Contact from './Contact';
 import Shop from './Shop';
 
+import Sliderhome from './Sliderhome';
+
 
 
 const Header = () => {
@@ -56,6 +58,7 @@ return(
     <Route path='/shop' element={<Shop/>}>Shop</Route>
   </Routes>
 
+<Sliderhome/>
    </>
 )
 
