@@ -8,3 +8,6 @@ header{background-color: #f9f9f9;}
 .head_account a svg{color:#222;margin: 0 0 0 13px;}
 .header_row{display: flex;justify-content: space-between; padding:20px 0; flex-wrap: wrap;}
 .head_account{width:20%;text-align: right; padding: 12px 0 0 0;}
+.footer__bg { background-color:#fdfcf8;}
+.footer__widget--desc { font-size: 14px;}
+.footer__widget--info{ margin: 10px 0px 0px 0px; padding-left:0px;}
