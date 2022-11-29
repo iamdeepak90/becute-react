@@ -1,20 +1,30 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import Blog from './Blog';
+import Accesories from './Accesories';
+import About from './About';
+import Contact from './Contact';
+import Shop from './Shop';
+
 
 
 const Header = () => {
 return(
+    <>
    <header>
     <div className='container'>
         <div className='header_row'>
-        <div className='logo'><a href='./'><img src="https://risingtheme.com/html/demo-becute/becute/assets/img/logo/nav-log.webp"/></a></div>
+        <div className='logo'><a href='./'><img alt='logo' src="https://risingtheme.com/html/demo-becute/becute/assets/img/logo/nav-log.webp"/></a></div>
         <div className='main_menu'>
             <ul>
-                <li><a className='nav_active' href='./'>Home</a></li>
-                <li><a href='./'>Shop</a></li>
-                <li><a href='./'>Accesories</a></li>
-                <li><a href='./'>Blog</a></li>
-                <li><a href='./'>About Us</a></li>
-                <li><a href='./'>Contact Us</a></li>
+                <li><NavLink className='nav_active' to='/'>Home</NavLink></li>
+                <li><NavLink to='/shop'>Shop</NavLink></li>
+                <li><NavLink to='/accesores'>Accesories</NavLink></li>
+                <li><NavLink to='/blog'>Blog</NavLink></li>
+                <li><NavLink to='about'>About Us</NavLink></li>
+                <li><NavLink to='contact'>Contact Us</NavLink></li>
+                
             </ul>
         </div>
         <div className='head_account'>
@@ -36,6 +46,17 @@ return(
         </div>
     </div>
    </header>
+  
+  <Routes>
+    <Route path='/'>Home</Route>
+    <Route path='/blog' element={<Blog/>}>Blog</Route>
+    <Route path='/about' element={<About/>}>About Us</Route>
+    <Route path='/contact' element={<Contact/>}>Contact Us</Route>
+    <Route path='/accesories' element={<Accesories/>}>Accesories</Route>
+    <Route path='/shop' element={<Shop/>}>Shop</Route>
+  </Routes>
+
+   </>
 )
 
 };
