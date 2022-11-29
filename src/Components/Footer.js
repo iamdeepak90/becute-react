@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+
 const Header = () => {
     return (
         <footer class="footer__section footer__bg">
@@ -73,7 +74,7 @@ const Header = () => {
 
 
         </footer>
-
+       
     )
 
 };
