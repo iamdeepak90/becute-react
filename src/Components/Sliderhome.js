@@ -1,31 +1,57 @@
-import React from 'react';
+import {React, useState, useEffect} from 'react';
 
 const Sliderhome = () => {
-    return(
-        <>
-   
 
-        <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="https://www.shutterstock.com/image-photo/diverse-amazon-forest-seen-above-600w-2072628056.jpg" className="d-block w-100" alt="..."/>
-    </div>
-    <div className="carousel-item">
-      <img src="https://www.shutterstock.com/image-photo/bonobo-on-branch-tree-natural-600w-550406149.jpg" className="d-block w-100" alt="..."/>
-    </div>
-    <div className="carousel-item">
-      <img src="https://www.shutterstock.com/image-photo/gardeners-eggplants-gardenthe-withdrawing-weeds-600w-700863124.jpg" className="d-block w-100" alt="..."/>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
+  const [sliders, setSliders] = useState([]);
+  useEffect(() => {
+     fetch('http://localhost:8000/api/sliders')
+        .then((response) => response.json())
+        .then((data) => {
+           console.log(data);
+           setSliders(data.sliders);
+        })
+        .catch((err) => {
+           console.log(err.message);
+        });
+  }, []);
+
+
+
+
+    return(
+    <>
+   
+   {sliders.map((slider) => {
+          <div>{slider.image}</div>
+         
+        
+        })}
+
+      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner">
+
+        {sliders.map((slider) => {
+         return (
+
+          <div className="carousel-item active">
+            <img src={slider.image} className="d-block w-100" alt={slider.title}/>
+          </div>
+          
+          );
+        
+        })}
+
+        </div>
+
+      <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+      </div>
       
         </>
     )
