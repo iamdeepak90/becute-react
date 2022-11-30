@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="footer__section footer__bg">
             <div className='container'>
-             
+                <div className="main__footer section--padding">
                     <div className="row ">
                         <div className="col-lg-4 col-md-8">
 
@@ -45,9 +45,7 @@ const Footer = () => {
 
                         <div className="col-lg-2 col-md-4">
 
-                            <h2 className="footer__widget--title ">Our Offer
-
-                            </h2>
+                            <h2 className="footer__widget--title ">Our Offer </h2>
                             <ul className="footer__widget--menu footer__widget--inner">
                                 <li className="footer__widget--menu__list"><NavLink to='contact'>Contact Us</NavLink></li>
                                 <li className="footer__widget--menu__list"><NavLink to='about'>About Us</NavLink></li>
@@ -119,7 +117,7 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                    
+                    </div>
                 </div>
             </div>
 
