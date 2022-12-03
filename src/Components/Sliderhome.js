@@ -4,7 +4,7 @@ const Sliderhome = () => {
 
   const [sliders, setSliders] = useState([]);
   useEffect(() => {
-     fetch('http://localhost:8000/api/sliders')
+     fetch('https://api.wisitech.in/api/sliders')
         .then((response) => response.json())
         .then((data) => {
            console.log(data);
